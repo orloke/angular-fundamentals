@@ -1,0 +1,8 @@
+<h2>Renderizando lista</h2>
+<ul>
+  <li *ngFor="let cellPhone of cellPhones">
+    <strong>{{ cellPhone.name }}</strong>
+    <p>{{ cellPhone.description }}</p>
+    <span [ngClass]="cellPhone.soldOff ? 'soldOff': 'soldOn'" >{{ cellPhone.soldOff ? "esgotado" : "disponível" }}</span>
+  </li>
+</ul>
